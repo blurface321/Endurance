@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.scss',
 })
 export class Footer {
-
+  submitEmail(email: string) {
+    console.log('Email submitted:', email);
+  }
 }

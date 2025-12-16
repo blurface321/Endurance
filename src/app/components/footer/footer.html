@@ -1,1 +1,74 @@
-<p>footer works!</p>
+<footer class="footer-wrapper">
+  
+  <!-- HERO SECTION WITH IMAGE -->
+  <!-- Replace 'assets/your-image.jpg' with your actual image path in the SCSS or inline style -->
+  <div class="hero-section">
+    
+    <!-- Content Overlay -->
+    <div class="hero-content">
+      <h1 class="headline">
+        Decode your diet.<br>
+        Predict your sleep.
+      </h1>
+      <p class="sub-headline">True health starts here.</p>
+
+      <!-- Input Group -->
+      <div class="input-container">
+        <input type="email" placeholder="Enter your email" class="email-input" #emailInput>
+        <button class="join-btn" (click)="submitEmail(emailInput.value)">Join Us</button>
+      </div>
+    </div>
+
+    <!-- The Dark Fade Effect -->
+    <div class="fade-overlay"></div>
+  </div>
+
+  <!-- FOOTER LINKS SECTION -->
+  <div class="footer-links-area">
+    <div class="container">
+      
+      <!-- Link Columns -->
+      <div class="links-grid">
+        <div class="link-column">
+          <h4>Platform</h4>
+          <a href="#">Overview</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+        </div>
+        
+        <div class="link-column">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+        
+        <div class="link-column">
+          <h4>Legal</h4>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+        </div>
+        
+        <div class="link-column">
+          <h4>Follow Us</h4>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+
+      <!-- Bottom Bar (Logo & Copyright) -->
+      <div class="bottom-bar">
+        <div class="company-logo">
+          <img src="../../../assets/svg_icons/Logo white.svg" alt="">
+          <span>Endurance</span>
+        </div>
+        <div class="copyright">
+          &copy; 2024 Endurance Inc. All rights reserved.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
