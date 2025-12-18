@@ -1,0 +1,98 @@
+// Variables
+$bg-color: #050505;
+$text-white: #ffffff;
+$text-grey: #9ca3af;
+$blue-highlight: #a5c9ff;
+$blue-end: #a5c9ff; 
+$blue-dark-text: #004e9c;
+
+.hero-container {
+  background-color: $bg-color;
+  color: $text-white;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ai-badge {
+  background-color: $blue-highlight;
+  color: $blue-dark-text;
+  
+  font-size: 0.85rem;
+  font-weight: 600;  
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+  padding: 0.35em 0.85em;
+  border-radius: 9999px;
+  opacity: 0.8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  .circle {
+    background-color: #004e9c;
+    border-radius: 100px;
+    height: 5px;
+    width: 5px;
+    margin: 0px 7px 0px 0px;
+  }
+}
+
+.ai-badge:hover {
+    opacity: 1;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.02em;
+
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+}
+
+// THE KEY UPDATE: Gradient Text Styles
+.gradient-text {
+  // Define the direction (right) and colors (White -> Blue)
+  background: linear-gradient(to right, #ffffff 0%, $blue-end 100%);
+  
+  // Clip the background to the text shape
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  // Make the text transparent so the background shows through
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  
+  // Optional: distinct fallback for very old browsers
+  display: inline-block; 
+}
+
+.subtext {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: $text-grey;
+  margin: 0;
+  max-width: 650px;
+  font-weight: 300;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+}

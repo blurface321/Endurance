@@ -34,7 +34,7 @@ $text-shadow-subtle: 0px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 2; 
   padding: 0 20px;
   max-width: 800px;
-  margin-bottom: 50px; 
+  // margin-bottom: 50px; 
 }
 
 .headline {
@@ -186,7 +186,7 @@ $text-shadow-subtle: 0px 2px 4px rgba(0, 0, 0, 0.2);
   color: $color-text-muted;
 
   .company-logo {
-    font-size: 16px;
+    font-size: 11px;
     color: rgba(255, 255, 255, 0.5);
     letter-spacing: -0.5px;
     display: flex;
@@ -195,10 +195,9 @@ $text-shadow-subtle: 0px 2px 4px rgba(0, 0, 0, 0.2);
   }
 
   img {
-    height: 20px;
+    height: 10px;
   }
   
-  // Mobile adjustment for bottom bar
   @media(max-width: 600px) {
     padding: 20px 20px;
     flex-direction: column;
