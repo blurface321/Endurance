@@ -13,7 +13,7 @@ $blue-dark-text: #004e9c;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 5rem 2rem 1rem 2rem;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@ $blue-dark-text: #004e9c;
   
   padding: 0.35em 0.85em;
   border-radius: 9999px;
-  opacity: 0.8;
+
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -49,10 +49,6 @@ $blue-dark-text: #004e9c;
     width: 5px;
     margin: 0px 7px 0px 0px;
   }
-}
-
-.ai-badge:hover {
-    opacity: 1;
 }
 
 .headline {
@@ -94,11 +90,10 @@ $blue-dark-text: #004e9c;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px; 
-  padding: 40px;
-  background-color: #0b0b0b;
+  gap: 30px;
+  padding: 40px 40px 0px 40px;
   min-height: 100vh;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .card {
@@ -140,7 +135,7 @@ $blue-dark-text: #004e9c;
 
 .svg-wrapper {
   width: 100%;
-  cursor: pointer;
+  // cursor: pointer;
   transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
               box-shadow 0.3s ease;
   
@@ -155,35 +150,33 @@ $blue-dark-text: #004e9c;
     0 10px 30px -5px rgba(0, 0, 0, 0.5), 
     0 4px 6px -2px rgba(0, 0, 0, 0.1);
   }
+}
 
-  &:hover {
-    // transform: translateY(-3px);
-    transform: scale(1.105);
-  }
+.card-bg-image .svg-wrapper:hover {
+  opacity: 0.65;
 }
 
 .card-footer {
   position: relative;
   z-index: 2;
-  margin-top: auto;
-  // padding: 0px 0px 32px 0px;
+  // margin-top: 100px; 
   text-align: left;
+  width: 100%;
   
   .card-title {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 600;
-    margin: 0 0 8px 0;
+    // margin: 0 0 12px 0;
     letter-spacing: -0.01em;
   }
 
   .card-desc {
     color: rgba(255, 255, 255, 0.5);
-    font-size: 16px; 
-    font-weight: 300;
-    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
     margin: 0;
-    max-width: 95%; 
   }
 }
 
@@ -192,8 +185,8 @@ $blue-dark-text: #004e9c;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 40%;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  height: 60%;
+  background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
   z-index: 1;
   pointer-events: none;
 }

@@ -13,24 +13,24 @@
   </div>
 
   <div class="showcase-container">
-  @for(card of cards; track card){
-    <div class="card">
-      <div class="card-bg-image" 
-        [style.background-image]="'url(' + card.backgroundUrl + ')'">
+    @for(card of cards; track card){
+      <div class="card">
+        <div class="card-bg-image" 
+          [style.background-image]="'url(' + card.backgroundUrl + ')'">
+        </div>
+        <div class="card-inner-content">
+            @for(svg of card.innerSvgs; track svg){
+              <div class="svg-wrapper">
+                <img [src]="svg" [alt]="svg.split('/')[5]"> 
+              </div>
+            }
+        </div>
+        <div class="card-footer">
+          <p class="card-title">{{ card.title }}</p>
+          <p class="card-desc">{{ card.description }}</p>
+        </div>
+        <div class="overlay-gradient"></div>
       </div>
-      <div class="card-inner-content">
-          @for(svg of card.innerSvgs; track svg){
-            <div class="svg-wrapper">
-              <img [src]="svg" alt=""> 
-            </div>
-          }
-      </div>
-      <div class="card-footer">
-        <p class="card-title">{{ card.title }}</p>
-        <p class="card-desc">{{ card.description }}</p>
-      </div>
-      <div class="overlay-gradient"></div>
-    </div>
-    }
+      }
   </div>
 </section>
