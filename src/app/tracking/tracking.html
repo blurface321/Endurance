@@ -11,4 +11,26 @@
       Snap a photo of your meal to instantly track calories, analyze sleep impact, and monitor gut health. Connect the dots between what you eat and how you feel.
     </p>
   </div>
+
+  <div class="showcase-container">
+  @for(card of cards; track card){
+    <div class="card">
+      <div class="card-bg-image" 
+        [style.background-image]="'url(' + card.backgroundUrl + ')'">
+      </div>
+      <div class="card-inner-content">
+          @for(svg of card.innerSvgs; track svg){
+            <div class="svg-wrapper">
+              <img [src]="svg" alt=""> 
+            </div>
+          }
+      </div>
+      <div class="card-footer">
+        <p class="card-title">{{ card.title }}</p>
+        <p class="card-desc">{{ card.description }}</p>
+      </div>
+      <div class="overlay-gradient"></div>
+    </div>
+    }
+  </div>
 </section>
