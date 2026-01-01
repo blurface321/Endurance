@@ -221,6 +221,7 @@ $blue-dark-text: #004e9c;
   color: transparent;
   margin-bottom: 1rem;
   margin-top: 0; 
+  letter-spacing: -0.02em;
 }
 
 .text-description {
@@ -292,8 +293,4 @@ $blue-dark-text: #004e9c;
     margin-bottom: 2rem;
     text-align: center;
   }
-}
-
-.weekly-plan {
-  min-height: 60vh;
 }

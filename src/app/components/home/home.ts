@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Tracking } from "../../tracking/tracking";
+import { Insights } from "../../insights/insights";
 
 @Component({
   selector: 'app-home',
-  imports: [Tracking],
+  imports: [Tracking, Insights],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })
