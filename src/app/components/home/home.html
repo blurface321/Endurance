@@ -1,17 +1,33 @@
 <section class="hero-wrapper">
-  <div class="container">
+  <div class="scrim-overlay"></div>
+  
+  <div class="container">  
     <h1 class="main-headline">
-      The clarity you need for the results you've always wanted
+      The <span class="serif-italic">clarity</span> you need for <br> the results you want.
     </h1>
+    
+    <p class="sub-headline">
+      Your personal AI Nutritionist. Snap a photo to track calories, 
+      predict sleep quality, and optimize your gut health—instantaneously.
+    </p>
 
-    <div class="input-area">
-      <div class="input-wrapper">
-        <input type="email" placeholder="Enter your email address" />
-        <button class="join-btn">Join waitlist</button>
-      </div>
+    <div class="ai-input-wrapper">
+        <input type="text" class="ai-input" id="typingInput" placeholder="Ask AI: How is my sleep affected by pasta?">
+        <button class="submit-btn" aria-label="Submit">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
     </div>
 
+    <button class="cta-btn">
+      <span>Join the Waitlist</span>
+    </button>
+
   </div>
+
+  <div class="bottom-gradient"></div>
 </section>
 
 <app-tracking></app-tracking>

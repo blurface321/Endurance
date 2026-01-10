@@ -1,24 +1,17 @@
-import { Component, OnInit } from '@angular/core';
-import { Tracking } from "../../tracking/tracking";
-import { Insights } from "../../insights/insights";
-import { FormsModule } from '@angular/forms';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  imports: [
-    FormsModule,
-    Tracking, 
-    Insights
-  ],
-  templateUrl: './home.html',
-  styleUrl: './home.scss',
+  selector: 'app-calories',
+  imports: [],
+  templateUrl: './calories.html',
+  styleUrl: './calories.scss',
 })
-export class Home implements OnInit {
+export class Calories implements OnInit, OnDestroy {
   phrases: string[] = [
-    "Suggest me some healthy breakfast options",
+    "How much did I eat today?",
     "On which days am I not hitting my goals?",
-    "List the top 5 caloric dense foods I consumed this week",
-    "How can I control my sugar consumption?"
+    "Is this meal gut-friendly?",
+    "What's are my major sources of protien in the past week?"
   ];
 
   private loopNum: number = 0;

@@ -12,5 +12,13 @@ import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
   styleUrl: './header.scss',
 })
 export class Header {
+  public showDropDown: boolean = false
 
+  onMouseEnter(){
+    this.showDropDown = !this.showDropDown
+  }
+
+  onMouseLeave(){
+    this.showDropDown = !this.showDropDown
+  }
 }

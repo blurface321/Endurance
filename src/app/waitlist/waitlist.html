@@ -1,0 +1,40 @@
+<div class="input-area">
+      @if(isSuccess) {
+        <div class="success-card fade-in">
+          <div class="icon-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <div class="success-text">
+            <h3>You're on the list!</h3>
+            <p>We'll notify {{ emailId }} when we launch.</p>
+          </div>
+        </div>
+      } @else {
+        <div class="input-wrapper fade-in">
+          <form (submit)="addToWaitlist()">
+            <input 
+              required 
+              name="email" 
+              type="email" 
+              placeholder="Enter your email address" 
+              [(ngModel)]="emailId"
+              [disabled]="isLoading" 
+              (keyup.enter)="addToWaitlist()"
+            />
+            <button class="join-btn" type="submit" [disabled]="isLoading">
+              @if(isLoading) {
+                <span>Joining...</span>
+              } @else {
+                <span>Join waitlist</span>
+              }
+            </button>
+          </form>
+        </div>
+  
+        @if(emailError !== ''){
+          <p class="error-msg fade-in">{{ emailError }}</p>
+        }
+      }
+    </div>
