@@ -11,7 +11,7 @@ export class Calories implements OnInit, OnDestroy {
     "How much did I eat today?",
     "On which days am I not hitting my goals?",
     "Is this meal gut-friendly?",
-    "What's are my major sources of protien in the past week?"
+    "What's were my major sources of protien in the past week?"
   ];
 
   private loopNum: number = 0;
