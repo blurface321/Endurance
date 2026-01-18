@@ -2,7 +2,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-calories',
-  imports: [],
+  imports: [
+    
+  ],
   templateUrl: './calories.html',
   styleUrl: './calories.scss',
 })
