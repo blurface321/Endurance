@@ -24,6 +24,7 @@ $blue-dark-text: #004e9c;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
+  opacity: 0;
 }
 
 .ai-badge {
@@ -99,8 +100,8 @@ $blue-dark-text: #004e9c;
 
 .card {
   position: relative;
-  width: 360px; 
-  height: 600px;
+  width: 450px;
+  height: 720px;
   border-radius: 32px;
   background-size: cover;
   background-position: center;
@@ -292,5 +293,23 @@ $blue-dark-text: #004e9c;
     padding-right: 0;
     margin-bottom: 2rem;
     text-align: center;
+  }
+}
+
+.hidden-on-scroll {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@for $i from 1 through 20 {
+  .delay-#{$i * 100}{
+    transition-delay: #{$i * 100}ms;
   }
 }

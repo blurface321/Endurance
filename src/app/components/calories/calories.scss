@@ -1,3 +1,50 @@
+@keyframes slideUpEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden-on-scroll {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.scroll-hidden {
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  // will-change: transform, opacity;
+}
+
+.enter-from-left{
+  transform: translateX(-100px);
+
+  &.in-view {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.enter-from-right {
+  transform: translateX(100px);
+
+  &.in-view {
+    opacity: 1;
+    transform: translateX(-50px);
+  }
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .hero-wrapper {
   position: relative;
   height: 80vh;
@@ -34,6 +81,15 @@
   align-items: center;
   max-width: 1200px; 
   margin: 0 auto;
+
+  & > * {
+    opacity: 0;
+    animation: slideUpEntrance 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.5s forwards;
+  }
+
+  .main-headline { animation-delay: 0.5s; }
+  .sub-title  { animation-delay: 0.5s; } 
+  .ai-input-wrapper { animation-delay: 0.6s; }
 }
 
 .main-headline {
@@ -198,8 +254,14 @@
   text-align: center;
   // max-width: 900px;
   margin: 0 auto;
-  margin-top: 180px;
+  margin-top: 200px;
   padding-bottom: 60px;
+}
+
+.next-meal, .ask-ai {
+  .header-section {
+    margin-top: 100px;
+  }
 }
 
 
@@ -302,21 +364,36 @@ p {
   display: flex;
   flex-grow: 1;
   justify-content: center;
-  // align-items: flex-end;
 
   img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    max-height: 350px;
+    // max-height: 350px;
   }
 
   .sankey {
-    max-height: 400px;
+    max-height: 500px;
   }
 
-  .visual-ai {
-    width: 500px;
+  .nova {
+    height: 358px;
+  }
+
+  .chrono-div, .nova-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .visual-div {
+    display: flex;
+    align-items: center;
+  }
+
+  & .chrono, .nova, .visual-ai, .sankey {
+    background: linear-gradient(to bottom right, #3f3f3f 0%, #000000 100%);
+    backdrop-filter: blur(10px); 
+    border-radius: 16px;
   }
 }
 
@@ -345,13 +422,6 @@ p {
 
 
 
-
-
-.ask-ai{
-  margin-bottom: 100px;
-}
-
-
 .screen-center {
   display: flex;
   justify-content: center;
@@ -371,9 +441,14 @@ p {
 .front-card {
   position: relative;
   z-index: 2; 
-  margin-left: 357px;
-  margin-bottom: 210px;
+  margin-left: 490px;
+  margin-bottom: 300px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition-delay: 0.5s; 
+
+  & img {
+    height: 240px;
+  }
 }
 
 .back-card {
@@ -381,6 +456,11 @@ p {
   z-index: 1; 
   bottom: 0;
   left: 0;
+  transition-delay: 0.25s; 
+
+  & img {
+    height: 400px;
+  }
 }
 
 .next-meal .placeholder-svg img {
@@ -390,8 +470,4 @@ p {
   border-radius: 16px;
 }
 
-.ask-ai .placeholder-svg img {
-  background: linear-gradient(to bottom right, #252525 0%, #000000 100%);
-  backdrop-filter: blur(10px); 
-  border-radius: 16px;
-}
+

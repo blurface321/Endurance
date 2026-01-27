@@ -14,14 +14,17 @@
 .gradient-card {
     position: relative;
     z-index: 2;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     height: auto;
-    min-height: 550px;
+    // min-height: 550px;
+    min-height: 780px;
     padding: 90px 60px;
     border-radius: 21px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .overlay-gradient {
@@ -73,20 +76,56 @@
 }
 
 .svg-container {
-  // width: 200px;
-  // height: 200px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  display: inline-block;
   margin-top: 100px;
+
+  &.animation{
+    top: 250%;
+    left: 50%;
+
+    & .svg {
+      height: 215px;
+    }
+  }
+
+  &.formation{
+    top: 40%;
+    left: 48%;
+    gap: 15px;
+  }
 }
 
 .svg {
-  width: 100%;
-  height: 100%;
   display: block;
   opacity: 1;
   border-radius: 16px;
   background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px); 
-//   box-shadow: 
-//   0 10px 30px -5px rgba(0, 0, 0, 0.5), 
-//   0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.main-svg {
+    position: relative;
+    z-index: 100;
+    height: 153px;
+}
+
+.corner-svg {
+    position: absolute;
+    margin-top: 5px;
+    height: 500px;
+}
+
+.hidden-on-scroll {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }

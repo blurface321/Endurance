@@ -1,5 +1,5 @@
 <section class="hero-container">
-  <div class="content-wrapper">
+  <div class="content-wrapper" appFade [threshold]="0.2">
     <div class="ai-badge"><span class="circle"></span>With AI analysis</div>
     <h1 class="headline">
       <span class="gradient-text">Eat smarter</span>
@@ -19,9 +19,9 @@
           [style.background-image]="'url(' + card.backgroundUrl + ')'">
         </div>
         <div class="card-inner-content">
-            @for(svg of card.innerSvgs; track svg){
+            @for(svg of card.innerSvgs; let i = $index; track svg){
               <div class="svg-wrapper">
-                <img [src]="svg" [alt]="svg.split('/')[5]"> 
+                <img [class]="'delay-' + ((i + 1) * 100)" appFade [threshold]="0.25" [src]="svg" [alt]="svg.split('/')[5]"> 
               </div>
             }
         </div>
@@ -35,7 +35,7 @@
   </div>
 </section>
 
-<section class="action-plan">
+<section class="action-plan" appFade [threshold]="0.4">
   <div class="text-section">
     <p class="text-title">Custom game plan</p>
     <p class="text-description">Stop guessing and start optimizing. Receive a personalized roadmap based on your unique data. We analyze your recent habits to pinpoint exactly where you are falling short, turning complex insights into a clear, actionable game plan designed to help you reach your goals faster.</p>

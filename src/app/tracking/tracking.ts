@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Fade } from '../../directives/fade';
 
 export interface CardData {
   cardName: string
@@ -10,7 +11,9 @@ export interface CardData {
 
 @Component({
   selector: 'app-tracking',
-  imports: [],
+  imports: [
+    Fade
+  ],
   templateUrl: './tracking.html',
   styleUrl: './tracking.scss',
 })
@@ -21,17 +24,17 @@ export class Tracking {
       backgroundUrl: '../../../assets/images/bg7.png',
       innerSvgs: [
         '../../../assets/svg_icons/Calories.svg',
-        '../../../assets/svg_icons/HiddenItems.svg',
         '../../../assets/svg_icons/HealthScore.svg',
       ],
       title: 'Monitor your calories',
-      description: 'Track macronutrients and uncover hidden ingredients like oils or creams. Use the Health Score to instantly gauge the overall nutritional quality of your meals.'
+      description: 'Track macronutrients add, remove, edit items detected by AI for better results. Use the Health Score to instantly gauge the overall nutritional quality of your meals.'
     },
     {
       cardName: 'Sleep',
       backgroundUrl: '../../../assets/images/bg6.png',
       innerSvgs: [
-        '../../../assets/svg_icons/SleepImpact.svg',
+        '../../../assets/svg_icons/SleepImpact2.svg',
+        // '../../../assets/svg_icons/SleepImpact.svg',
         '../../../assets/svg_icons/SleepInsights.svg',
         '../../../assets/svg_icons/SleepImpactBreakdown.svg',
       ],

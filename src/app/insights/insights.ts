@@ -1,8 +1,9 @@
 import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Fade } from "../../directives/fade";
 
 @Component({
   selector: 'app-insights',
-  imports: [],
+  imports: [Fade],
   templateUrl: './insights.html',
   styleUrl: './insights.scss',
 })
