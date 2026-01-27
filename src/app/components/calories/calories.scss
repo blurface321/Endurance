@@ -377,7 +377,9 @@ p {
   }
 
   .nova {
-    height: 358px;
+    height: auto;
+    max-height: 358px;
+    width: 100%;
   }
 
   .chrono-div, .nova-div {

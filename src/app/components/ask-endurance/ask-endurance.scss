@@ -124,7 +124,8 @@
 
 .ai-input-wrapper {
   position: relative;
-  width: 560px;
+  width: 90%;
+  max-width: 560px; 
   margin: 0 auto;
 }
 
@@ -182,15 +183,21 @@
 
 .thinking-wrapper {
   position: relative;
-  width: 560px;
-  margin: 10px 700px;
+  width: 90%;
+  max-width: 560px;
+  margin: 12px auto 0 auto;
+  text-align: left;
+  padding-left: 20px; 
+  box-sizing: border-box;
 }
 
 .letter-wrapper {
   display: flex;
-  gap: 1px;
+  // gap: 0px;
   color: #fff;
+  white-space: nowrap; 
 }
+
 .loader-letter {
   display: inline-block;
   opacity: 0.4;
