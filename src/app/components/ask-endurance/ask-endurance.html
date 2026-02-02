@@ -1,6 +1,6 @@
 <section class="ask-ai">
     <div class="header-section">
-        <h1 class="hero-title">
+        <h1 class="hero-title gradient-text">
             <span class="italic-accent">Ask</span> Endurance anything
         </h1>
         <p class="hero-subtitle">
@@ -8,7 +8,7 @@
         </p>
     </div>
     <div class="ai-input-wrapper">
-        <input type="text" class="ai-input" id="typingInput1" placeholder="How is my sleep affected by pasta?">
+        <textarea class="ai-input" id="typingInput1" placeholder="How is my sleep affected by pasta?"></textarea>
         <button class="submit-btn" aria-label="Submit">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="19" x2="12" y2="5"></line>
@@ -32,11 +32,11 @@
             </div>
         </div>
     }
+    @if(showResultContainer){
+        <div class="screen-center">
+            <div class="result-fade-wrapper" [class.visible]="isResultVisible">
+                <img class="svg" [src]="resultSvgs[loopNum]" alt="">
+            </div>
+        </div>
+    }
 </section>
-
-
-    <!-- <div class="screen-center"> -->
-        <!-- <div class="placeholder-svg">
-            <img src="../../../assets/svg_icons/AskAIAnything.svg" alt="">
-        </div> -->
-    <!-- </div> -->

@@ -1,8 +1,11 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { Fade } from "../../../directives/fade";
 
 @Component({
   selector: 'app-ask-endurance',
-  imports: [],
+  imports: [
+
+  ],
   templateUrl: './ask-endurance.html',
   styleUrl: './ask-endurance.scss',
 })
@@ -10,11 +13,15 @@ export class AskEndurance implements OnInit, OnDestroy {
   constructor(private cdr: ChangeDetectorRef){}
 
   phrases: string[] = [
-    "How much did I eat today?",
-    "On which days am I not hitting my goals?",
-    "Is this meal gut-friendly?",
-    "What's were my major sources of protien in the past week?"
+    "Show me the relationship between my sugar intake and my Sleep Impact Score over the last week.",
+    "Visualize my probiotic vs. prebiotic intake for the last 10 days.",
+    "Show me the consistency of my meal timings over the last month.",
+    "Compare my hydration levels with my reported bloating incidents."
   ];
+  resultSvgs: string[] = [
+    '../../../assets/svg_icons/Q1Answer.svg',
+    '../../../assets/svg_icons/Q2Answer.svg'
+  ]
 
   public loopNum: number = 0;
   public isDeleting: boolean = false;
@@ -23,6 +30,8 @@ export class AskEndurance implements OnInit, OnDestroy {
   public timeoutId: any; 
   public isPaused: boolean = false;
   public isThinking: boolean = false
+  public isResultVisible: boolean = false
+  public showResultContainer: boolean = false; 
 
   ngOnInit(): void {
     this.typeWriter();
@@ -47,10 +56,27 @@ export class AskEndurance implements OnInit, OnDestroy {
 
       this.timeoutId = setTimeout(() => {
         this.isThinking = false;
-        this.isDeleting = true;
-        this.cdr.detectChanges(); 
-        this.typeWriter();        
-      }, Math.random()*3000 + 560);
+        
+        this.showResultContainer = true;
+        this.cdr.detectChanges();
+
+        setTimeout(() => {
+            this.isResultVisible = true;
+            this.cdr.detectChanges();
+        }, 50);
+
+        this.timeoutId = setTimeout(() => {
+          this.isResultVisible = false
+          this.cdr.detectChanges();
+          setTimeout(() => {
+            this.showResultContainer = false; 
+            this.isDeleting = true;     
+            this.cdr.detectChanges(); 
+            this.typeWriter();          
+          }, 500);
+        }, 4000); 
+
+      }, Math.random() * 2000 + 1000);
 
       return; 
     }
@@ -68,10 +94,10 @@ export class AskEndurance implements OnInit, OnDestroy {
 
     if (this.isDeleting) {
       this.txt = fullText.substring(0, this.txt.length - 1);
-      this.typingSpeed = 50;
+      this.typingSpeed = 10;
     } else {
       this.txt = fullText.substring(0, this.txt.length + 1);
-      this.typingSpeed = 100;
+      this.typingSpeed = 15;
     }
 
 
