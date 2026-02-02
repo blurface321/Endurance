@@ -2,14 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { Tracking } from "../../tracking/tracking";
 import { Insights } from "../../insights/insights";
 import { FormsModule } from '@angular/forms';
+import { AskEndurance } from "../ask-endurance/ask-endurance";
 
 @Component({
   selector: 'app-home',
   imports: [
     FormsModule,
-    Tracking, 
-    Insights
-  ],
+    Tracking,
+    Insights,
+    AskEndurance
+],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

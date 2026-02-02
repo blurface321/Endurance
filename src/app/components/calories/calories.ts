@@ -1,14 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Fade } from "../../../directives/fade";
 import { ScrollObserve } from '../../../directives/scroll-observe';
-import { AskEndurance } from "../ask-endurance/ask-endurance";
 
 @Component({
   selector: 'app-calories',
   imports: [
     Fade,
-    ScrollObserve,
-    AskEndurance
+    ScrollObserve
 ],
   templateUrl: './calories.html',
   styleUrl: './calories.scss',

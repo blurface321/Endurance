@@ -20,7 +20,9 @@ export class AskEndurance implements OnInit, OnDestroy {
   ];
   resultSvgs: string[] = [
     '../../../assets/svg_icons/Q1Answer.svg',
-    '../../../assets/svg_icons/Q2Answer.svg'
+    '../../../assets/svg_icons/Q2Answer.svg',
+    '../../../assets/svg_icons/Q3Answer.svg',
+    '../../../assets/svg_icons/Q4Answer.svg'
   ]
 
   public loopNum: number = 0;
