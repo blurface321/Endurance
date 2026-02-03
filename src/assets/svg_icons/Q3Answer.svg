@@ -41,4 +41,5 @@
 <circle cx="548" cy="802" r="5" fill="#FFB500"/>
 <circle cx="644" cy="792" r="5" fill="#FFB500"/>
 <circle cx="740" cy="784" r="5" fill="#FFB500"/>
+<rect x="710" y="439" width="64" height="455" rx="10" fill="white" fill-opacity="0.1"/>
 </svg>

@@ -44,10 +44,10 @@ export class Calories implements OnInit, OnDestroy {
 
     if(this.isDeleting){
       this.txt = fullText.substring(0, this.txt.length - 1);
-      this.typingSpeed = 50
+      this.typingSpeed = 20
     } else {
       this.txt = fullText.substring(0, this.txt.length + 1);
-      this.typingSpeed = 100
+      this.typingSpeed = 50
     }
 
     const inputEl = document.getElementById('typingInput') as HTMLInputElement;

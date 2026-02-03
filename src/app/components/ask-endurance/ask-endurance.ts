@@ -85,7 +85,7 @@ export class AskEndurance implements OnInit, OnDestroy {
 
     if (this.isDeleting && this.txt === '') {
       this.isDeleting = false;
-      this.loopNum++;
+      this.loopNum == 3 ? this.loopNum = 0 : this.loopNum++;
       
       this.timeoutId = setTimeout(() => {
         this.typeWriter();
