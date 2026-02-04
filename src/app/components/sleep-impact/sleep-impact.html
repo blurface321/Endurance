@@ -20,5 +20,33 @@
 </section>
 
 <section class="features">
-    
+    <div class="header-section">
+        <h1 class="hero-title gradient-text">
+            <span class="italic-accent">Beyond</span> just counting hours
+        </h1>
+        <p class="hero-subtitle">
+            Sleep doesn't start when you close your eyes—it starts with what you eat. Analyze how your nutrition impacts your circadian rhythm and wake up to actionable insights, not just data.
+        </p>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="bento-card span-7" appFade [threshold]="0.5">
+            <div class="text-content">
+                <h2>Detect metabolic clashes instantly</h2>
+                <p>Don't let a bad combo ruin a good day. Receive instant alerts when specific food pairings risk spiking your inflammation or disrupting your circadian rhythm</p>
+            </div>
+            <div class="card-interior-placeholder">
+                <img class="combo" src="../../../assets/svg_icons/AdverseComboAlert.svg" alt="Sankey Chart">
+            </div>
+        </div>
+        <div class="bento-card span-5" appFade [threshold]="0.5">
+            <div class="text-content">
+                <h2>Know what went wrong</h2>
+                <p>Past is history and we can learn from it. Know how to remedy the mistakes you made yesterday</p>
+            </div>
+            <div class="card-interior-placeholder">
+                <img class="gm" src="../../../assets/svg_icons/GoodMorning.svg" alt="Sankey Chart">
+            </div>
+        </div>
+    </div>
 </section>

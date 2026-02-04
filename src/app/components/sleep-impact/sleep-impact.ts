@@ -4,7 +4,8 @@ import { Fade } from '../../../directives/fade';
 @Component({
   selector: 'app-sleep-impact',
   imports: [
-  ],
+    Fade
+],
   templateUrl: './sleep-impact.html',
   styleUrl: './sleep-impact.scss',
 })
