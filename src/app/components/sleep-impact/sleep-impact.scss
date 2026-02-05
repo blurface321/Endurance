@@ -323,12 +323,17 @@ p {
     border-radius: 16px;
   }
 
+  & .combo-div {
+    display: flex;
+    align-items: center;
+  }
+
   & .combo {
-    height: 200px;
+    max-height: 200px;
   }
 
   & .gm {
-    height: 150px;
+    max-height: 420px;
   }
 }
 
@@ -348,5 +353,17 @@ p {
     width: 100%;
     box-sizing: border-box;
     padding: 32px 20px;
+  }
+}
+
+
+
+
+.journal {
+  margin-top: 100px;
+  display: flex;
+
+  & img {
+    max-height: 650px;
   }
 }
