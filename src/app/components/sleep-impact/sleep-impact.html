@@ -56,8 +56,13 @@
 <div class="divider"></div>
 
 <section class="journal">
-    <img src="../../../assets/svg_icons/Journal.svg" alt="">
-    <img src="../../../assets/svg_icons/Journal1.svg" alt="">
+    <div class="inner-card">
+        <div class="text-section" appFade [threshold]="0.4">
+            <p class="text-title">Context is the missing metric</p>
+            <p class="text-description">Find the hidden patterns between your lifestyle choices and your health metrics using our AI-driven correlation engine. Wearables track what happened to your body. The Journal explains why. Connect your daily behaviors to your biological outcomes.</p>
+        </div>
+        <div class="card-section">
+            <img appFade [threshold]="0.4" class="card-svg" src="../../../assets/svg_icons/Journal.svg" alt="">
+        </div>
+    </div>
 </section>
-
-<div class="divider"></div>
