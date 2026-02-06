@@ -32,9 +32,11 @@
             </div>
         </div>
     }
-    @if(showResultContainer){
+    @if (showResultContainer) {
         <div class="screen-center">
-            <div class="result-fade-wrapper" [class.visible]="isResultVisible">
+            <div class="result-fade-wrapper" 
+                [animate.enter]="'fade-in-anim'" 
+                [animate.leave]="'fade-out-anim'">
                 <img class="svg" [src]="resultSvgs[loopNum]" alt="">
             </div>
         </div>

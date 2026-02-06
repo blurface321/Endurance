@@ -1,5 +1,4 @@
 import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
-import { Fade } from "../../../directives/fade";
 
 @Component({
   selector: 'app-ask-endurance',

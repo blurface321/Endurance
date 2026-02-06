@@ -11,13 +11,6 @@
   padding-bottom: 60px;
 }
 
-.next-meal, .ask-ai {
-  .header-section {
-    margin-top: 100px;
-  }
-}
-
-
 .hero-title {
   font-size: 4rem;
   font-weight: 400; 
@@ -268,14 +261,32 @@
   max-width: 560px; 
   margin-left: auto;
   margin-right: auto;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.35s ease-in-out, transform 0.25s ease-in-out;
+  // opacity: 0;
+  // transform: translateY(10px);
+  // transition: opacity 0.35s ease-in-out, transform 0.25s ease-in-out;
 
-  &.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  // &.visible {
+  //   opacity: 1;
+  //   transform: translateY(0);
+  // }
+}
+
+@keyframes fadeInSlide {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOutSlide {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(10px); }
+}
+
+.fade-in-anim {
+  animation: fadeInSlide 0.35s ease-in-out forwards;
+}
+
+.fade-out-anim {
+  animation: fadeOutSlide 0.25s ease-in-out forwards;
 }
 
 .svg {
