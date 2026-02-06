@@ -443,7 +443,8 @@ p {
   border-radius: 12px;
   margin: 2rem 0rem;
   backdrop-filter: blur(24px);
-  background-color: #00000061;
+  // background-color: #00000061; 
+  background-color: rgba(0, 0, 0, 0.6);
   // background-color: rgba(0, 0, 0, 0.2);
   // backdrop-filter: blur(10px); 
   // box-shadow: 

@@ -30,8 +30,8 @@
     align-items: flex-start;
     height: auto;
     // min-height: 550px;
-    min-height: 780px;
-    padding: 90px 60px;
+    min-height: 650px;
+    padding: 40px;
     border-radius: 21px;
     background-size: cover;
     background-position: center;
@@ -139,7 +139,7 @@
   margin-top: 100px;
 
   &.animation{
-    top: 250%;
+    top: 205%;
     left: 50%;
   }
   
@@ -157,19 +157,20 @@
   // background-color: rgba(0, 0, 0, 0.2);
   // backdrop-filter: blur(10px);
   backdrop-filter: blur(24px);
-  background-color: #00000061;
+  // background-color: #00000061; 
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .main-svg {
     position: relative;
     z-index: 100;
-    height: 153px;
+    height: 120px;
 }
 
 .corner-svg {
     position: absolute;
     margin-top: 5px;
-    height: 500px;
+    height: 280px;
 }
 
 .hidden-on-scroll {
