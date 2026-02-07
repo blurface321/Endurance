@@ -1,7 +1,4 @@
 .container {
-  // padding: clamp(20px, 5vw, 100px) clamp(20px, 8vw, 150px);
-  // width: 100%;
-  // box-sizing: border-box;
   padding: 100px 150px;
 }
 ._2-col-grid {
@@ -11,31 +8,23 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     margin-top: 0;
-    // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    // gap: 16px;
     margin-top: 0;
     display: grid;
 }
 
 .gradient-card {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    // flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: center;
-    // min-height: 60vh; 
-    // padding: 60px 40px;
-    justify-content: center;
-    align-items: flex-start;
-    height: auto;
-    // min-height: 550px;
-    min-height: 650px;
-    padding: 40px;
-    border-radius: 21px;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+  min-height: 650px;
+  padding: 40px;
+  border-radius: 21px;
+  background-size: cover;
+  // background-position: top;
+  overflow: hidden;
 }
 
 .overlay-gradient {
@@ -44,17 +33,17 @@
   left: 0;
   width: 100%;
   height: 60%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent);
   z-index: 0;
   pointer-events: none;
 }
 
 .gradient-card:first-of-type {
-    background-image: url('../../assets/images/bg2.png');
+    background-image: url('../../assets/images/bg24.png');
 }
 
 .gradient-card:last-of-type {
-    background-image: url('../../assets/images/bg3.png');
+    background-image: url('../../assets/images/bg23.png');
 }
 
 .card-content {
