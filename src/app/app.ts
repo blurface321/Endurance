@@ -21,21 +21,19 @@ export class App implements OnInit {
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => {
-      // setTimeout(() => {
-        const scrollContainer = document.getElementById('main-scroll-container');
-  
-        if(scrollContainer) {
-          scrollContainer.style.scrollBehavior = 'auto'
-          scrollContainer.scrollTop = 0;
-          scrollContainer.scrollTo({ top: 0, left: 0, behavior: 'instant'});
+      const scrollContainer = document.getElementById('main-scroll-container');
 
-          setTimeout(() => {
-            scrollContainer.style.scrollBehavior = 'smooth';
-          }, 50);
-        }
+      if(scrollContainer) {
+        scrollContainer.style.scrollBehavior = 'auto'
+        scrollContainer.scrollTop = 0;
+        scrollContainer.scrollTo({ top: 0, left: 0, behavior: 'instant'});
 
-        window.scrollTo({ top: 0, behavior: 'instant'})
-      // }, 100);
+        setTimeout(() => {
+          scrollContainer.style.scrollBehavior = 'smooth';
+        }, 50);
+      }
+
+      window.scrollTo({ top: 0, behavior: 'instant'})
     });
   }
 }
