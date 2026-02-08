@@ -1,0 +1,28 @@
+<section class="hero-container" appFade [threshold]="0.2">
+    <div class="fade-overlay"></div>
+    <div class="grid-wrapper">
+      
+      <div class="icon-row top-row">
+        @for (item of repeatArray; track $index) {
+            <div class="tile">
+                <img [src]="getSvg($index)" alt="" class="tile-icon">
+            </div>
+        }
+      </div>
+  
+      <div class="icon-row bottom-row">
+        @for (item of repeatArray; track $index) {
+            <div class="tile">
+                <img [src]="getSvg($index + 1)" alt="" class="tile-icon">
+            </div>
+        }
+      </div>
+  
+    </div>
+  
+    <div class="center-content">
+      <div class="glow-bg"></div>
+      <img [src]="mainLogo" alt="Main App Logo" class="main-logo">
+    </div>
+  
+</section>

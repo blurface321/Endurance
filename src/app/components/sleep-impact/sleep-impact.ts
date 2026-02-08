@@ -1,10 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Fade } from '../../../directives/fade';
+import { Integrations } from "../integrations/integrations";
 
 @Component({
   selector: 'app-sleep-impact',
   imports: [
-    Fade
+    Fade,
+    Integrations
 ],
   templateUrl: './sleep-impact.html',
   styleUrl: './sleep-impact.scss',
