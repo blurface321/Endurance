@@ -23,7 +23,6 @@
   padding: 40px;
   border-radius: 21px;
   background-size: cover;
-  // background-position: top;
   overflow: hidden;
 }
 
@@ -39,11 +38,13 @@
 }
 
 .gradient-card:first-of-type {
-    background-image: url('../../assets/images/bg24.png');
+    background-image: url('../../assets/images/bg2.png');
+    background-position: right;
 }
 
 .gradient-card:last-of-type {
-    background-image: url('../../assets/images/bg23.png');
+    background-image: url('../../assets/images/bg21.png');
+    background-position: center;
 }
 
 .card-content {

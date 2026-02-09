@@ -21,7 +21,7 @@ export class Tracking {
   cards: CardData[] = [
     {
       cardName: 'Calories',
-      backgroundUrl: '../../../assets/images/bg7.png',
+      backgroundUrl: '../../../assets/images/bg2.png',
       innerSvgs: [
         '../../../assets/svg_icons/Calories.svg',
         '../../../assets/svg_icons/HealthScore.svg',
@@ -31,7 +31,7 @@ export class Tracking {
     },
     {
       cardName: 'Sleep',
-      backgroundUrl: '../../../assets/images/bg6.png',
+      backgroundUrl: '../../../assets/images/bg21.png',
       innerSvgs: [
         '../../../assets/svg_icons/SleepImpact2.svg',
         // '../../../assets/svg_icons/SleepImpact.svg',
@@ -43,7 +43,7 @@ export class Tracking {
     },
     {
       cardName: 'Gut',
-      backgroundUrl: '../../../assets/images/bg4.png',
+      backgroundUrl: '../../../assets/images/bg29.png',
       innerSvgs: [
         '../../../assets/svg_icons/GutScore.svg',
         '../../../assets/svg_icons/GutInsights.svg',
