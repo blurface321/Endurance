@@ -1,26 +1,19 @@
-<footer class="footer-wrapper">
-  
-  <!-- HERO SECTION (No Changes here) -->
+<!-- <footer class="footer-wrapper">
   <div class="hero-section">
     <div class="hero-content">
       <h1 class="headline">
-        Decode your diet.<br>
-        Predict your sleep.
+        Ready When You Are
       </h1>
-      <p class="sub-headline">True health starts here.</p>
+      <p class="sub-headline">Start with one step. One log at a time. Endurance meets you where you are and helps you move forward with clarity and confidence.</p>
 
       <div class="input-container">
         <input type="email" placeholder="Enter your email" class="email-input" #emailInput>
         <button class="join-btn" (click)="submitEmail(emailInput.value)">Join Us</button>
       </div>
     </div>
-    <div class="fade-overlay"></div>
   </div>
 
-  <!-- FOOTER LINKS SECTION -->
   <div class="footer-links-area">
-    
-    <!-- 1. The Container keeps the links constrained to the middle (optional, or you can make this fluid too) -->
     <div class="container">
       <div class="links-grid">
         <div class="link-column">
@@ -51,19 +44,69 @@
           <a href="#">Instagram</a>
         </div>
       </div>
-    </div> <!-- END CONTAINER HERE -->
+    </div>
+  </div>
+</footer> -->
 
-    <!-- 2. Bottom Bar is now OUTSIDE the container to span full width -->
-    <div class="bottom-bar">
-      <div class="company-logo">
-        <!-- Ensure correct path to your logo -->
-        <img src="../../../assets/svg_icons/Logo white.svg" alt="Logo">
-        <span>Endurance</span>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="brand-column">
+      <div class="logo-wrapper">
+        <img class="brand-icon" src="../../../assets/images/Logoblack.png" alt="">
+        <span class="brand-name">Endurance</span>
       </div>
-      <div class="copyright">
-        &copy; 2024 Endurance Inc. All rights reserved.
+
+      <p class="copyright">© Endurance Health, Inc. 2025</p>
+
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" aria-label="X">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
       </div>
     </div>
 
+    <div class="links-column-wrapper">
+      <div class="link-group">
+        <h3>Company</h3>
+        <ul>
+          <li><a routerLink="/about">About us</a></li>
+          <li><a routerLink="/careers">Careers</a></li>
+          <li><a routerLink="/blog">Blog</a></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>Product</h3>
+        <ul>
+          <li><a routerLink="/download">Download App</a></li>
+          <li><a routerLink="/start">Getting started</a></li>
+          <li><a routerLink="/releases">Release notes</a></li>
+          <li><a routerLink="/roadmap">Roadmap</a></li>
+          <li><a routerLink="/beta">Beta</a></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>Resources</h3>
+        <ul>
+          <li><a routerLink="/faq">FAQ</a></li>
+          <li><a routerLink="/feature-request">Request a feature</a></li>
+          <li><a routerLink="/report-bug">Report a bug</a></li>
+          <li><a routerLink="/contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="link-group">
+        <h3>Legal</h3>
+        <ul>
+          <li><a routerLink="/terms">Terms of Service</a></li>
+          <li><a routerLink="/privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </footer>

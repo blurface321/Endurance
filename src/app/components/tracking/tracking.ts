@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Fade } from '../../directives/fade';
+import { Fade } from '../../../directives/fade';
 
 export interface CardData {
   cardName: string
@@ -21,7 +21,7 @@ export class Tracking {
   cards: CardData[] = [
     {
       cardName: 'Calories',
-      backgroundUrl: '../../../assets/images/bg2.png',
+      backgroundUrl: '../../../assets/images/bevel1.png',
       innerSvgs: [
         '../../../assets/svg_icons/Calories.svg',
         '../../../assets/svg_icons/HealthScore.svg',
@@ -31,7 +31,7 @@ export class Tracking {
     },
     {
       cardName: 'Sleep',
-      backgroundUrl: '../../../assets/images/bg21.png',
+      backgroundUrl: '../../../assets/images/bevel2.png',
       innerSvgs: [
         '../../../assets/svg_icons/SleepImpact2.svg',
         // '../../../assets/svg_icons/SleepImpact.svg',
@@ -43,7 +43,7 @@ export class Tracking {
     },
     {
       cardName: 'Gut',
-      backgroundUrl: '../../../assets/images/bg29.png',
+      backgroundUrl: '../../../assets/images/bevel4.png',
       innerSvgs: [
         '../../../assets/svg_icons/GutScore.svg',
         '../../../assets/svg_icons/GutInsights.svg',
