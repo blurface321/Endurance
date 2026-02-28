@@ -204,6 +204,15 @@
   margin: 0 auto;
 }
 
+.showcase-image-container {
+  height: 80vh;
+  background-image: url('../../../assets/images/footer.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;

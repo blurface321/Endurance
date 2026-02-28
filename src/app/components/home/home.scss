@@ -175,20 +175,29 @@ $text-grey: #616265 ;
 }
 
 .cta-btn {
-  padding: 12px 28px;
-  border-radius: 99px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  outline: none;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #000;
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // gap: 10px;
+  padding: .875rem 1.875rem;
+  border-radius: 50vw;
+
+  background-color: #fff;
+  color: #14171a;
+  border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  
+  overflow: hidden;
+  // font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+  font-size: 1.25rem;
+  font-weight: 500; 
+  letter-spacing: 0;
+  
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
 
   &:hover {
-    background: rgba(255, 255, 255, 1);
-    color: #000;
-    border-color: #fff;
+    transform: scale(1.02); 
   }
 }

@@ -1,0 +1,105 @@
+
+.feature-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #111;
+    letter-spacing: -2px;
+}
+
+.header-content p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Grid Layout */
+.card-grid {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   gap: 24px;
+    grid-column-gap: .75rem;
+    grid-row-gap: .75rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+    padding-top: 14%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    height: 750px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-text {
+//   position: relative;
+//   z-index: 2;
+//   text-align: center;
+//   margin-top: 60px;
+//   padding: 0 20px;
+//   width: 100%;
+//   box-sizing: border-box;
+    z-index: 10;
+    grid-column-gap: .625rem;
+    grid-row-gap: .625rem;
+    text-align: center;
+    flex-flow: column;
+    display: flex;
+    position: relative;
+}
+
+.card-label {
+    color: #fff9;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-headline {
+    color: #fff;
+    text-shadow: 0 .25rem .5rem #00000026;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    line-height: 1.05;
+    margin-top: 0;
+}

@@ -1,0 +1,18 @@
+<section class="feature-section">
+  <div class="header-content">
+    <h2>{{ headerTitle }}</h2>
+    <p>{{ headerDescription }}</p>
+  </div>
+  <div class="card-grid">
+    <div class="card" *ngFor="let card of cards">
+      <img [src]="card.image" [alt]="card.headline" class="card-bg-image">
+      <div class="card-text">
+        <span class="card-label">{{ card.label }}</span>
+        <h3 class="card-headline">
+          {{ card.headline }} <br *ngIf="card.subHeadline"> {{ card.subHeadline }}
+        </h3>
+      </div>
+
+    </div>
+  </div>
+</section>

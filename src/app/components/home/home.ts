@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Tracking } from '../tracking/tracking';
 import { FormsModule } from '@angular/forms';
 import { Fade } from "../../../directives/fade";
+import { Bento } from "../bento/bento";
 
 @Component({
   selector: 'app-home',
   imports: [
     FormsModule,
     Tracking,
-    Fade
+    Fade,
+    Bento
 ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
