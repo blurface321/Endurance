@@ -33,9 +33,9 @@ export class Bento {
       image: '../../../assets/images/bento2.jpg'
     },
     {
-      label: 'Smart Alarm',
-      headline: 'Wake up feeling',
-      subHeadline: 'refreshed',
+      label: 'Sleep Insights',
+      headline: 'Wake up to',
+      subHeadline: 'actionable data',
       image: '../../../assets/images/bento3.png'
     },
     {
