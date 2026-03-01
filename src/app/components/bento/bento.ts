@@ -30,13 +30,13 @@ export class Bento {
       label: 'Energy Bank',
       headline: 'Know when to push,',
       subHeadline: 'and when to rest',
-      image: '../../../assets/images/bento2.jpg'
+      image: '../../../assets/images/Energy.png'
     },
     {
       label: 'Sleep Insights',
       headline: 'Wake up to',
       subHeadline: 'actionable data',
-      image: '../../../assets/images/bento3.png'
+      image: '../../../assets/images/SleepInsight.png'
     },
     {
       label: 'Journal',

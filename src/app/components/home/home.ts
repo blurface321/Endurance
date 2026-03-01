@@ -3,6 +3,8 @@ import { Tracking } from '../tracking/tracking';
 import { FormsModule } from '@angular/forms';
 import { Fade } from "../../../directives/fade";
 import { Bento } from "../bento/bento";
+import { HorizontalCarousel } from "../horizontal-carousel/horizontal-carousel";
+import { Layout } from "../layout/layout";
 
 @Component({
   selector: 'app-home',
@@ -10,7 +12,9 @@ import { Bento } from "../bento/bento";
     FormsModule,
     Tracking,
     Fade,
-    Bento
+    Bento,
+    HorizontalCarousel,
+    Layout
 ],
   templateUrl: './home.html',
   styleUrl: './home.scss',

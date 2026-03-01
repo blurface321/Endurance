@@ -1,0 +1,27 @@
+.frames-container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    padding: 0px 0px 0px 40px;
+}
+
+.hero-title {
+    color: #1a1a1a;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -2px; 
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.hero-subtitle {
+    color: #555555; 
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-weight: 400;
+    max-width: 780px;
+    margin: 0 auto; 
+}
