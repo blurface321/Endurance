@@ -1,0 +1,33 @@
+<header class="section-header">
+  <h2>Built for Longevity</h2>
+</header>
+
+<div class="carousel-wrapper">
+  <div #viewport class="carousel-viewport">
+    <div #track class="carousel-track">
+      <div
+        *ngFor="let card of clonedCards"
+        class="carousel-item"
+      >
+        <div class="carousel-card">
+          <div class="card-bg" [ngClass]="card.bgClass"></div>
+          <span class="card-overlay-label">{{ card.overlayLabel }}</span>
+        </div>
+        <div class="card-text">
+          <h3 class="card-title">{{ card.title }}</h3>
+          <p class="card-desc">{{ card.desc }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div #dotsEl class="carousel-dots">
+    <span
+      *ngFor="let card of cards; let i = index"
+      class="dot"
+      (click)="onDotClick(i)"
+    ></span>
+  </div>
+
+</div>

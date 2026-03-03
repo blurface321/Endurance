@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Tracking } from '../tracking/tracking';
+import { Tracking } from './tracking/tracking';
 import { FormsModule } from '@angular/forms';
 import { Fade } from "../../../directives/fade";
-import { Bento } from "../bento/bento";
-import { HorizontalCarousel } from "../horizontal-carousel/horizontal-carousel";
-import { Layout } from "../layout/layout";
+import { Bento } from './bento/bento';
+import { HorizontalCarousel } from './horizontal-carousel/horizontal-carousel';
+import { Layout } from './layout/layout';
 
 @Component({
   selector: 'app-home',

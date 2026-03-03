@@ -276,7 +276,7 @@
 
 .links-column-wrapper {
   display: flex;
-  gap: 80px;
+  gap: 90px;
   flex-wrap: wrap;
 }
 
@@ -310,13 +310,12 @@
       font-weight: 500;
 
       &:hover {
-        border-bottom: 1px solid #555;
+        color: rgba(34, 34, 34, 0.6);
       }
     }
   }
 }
 
-/* --- Responsive Adjustments --- */
 @media (max-width: 1024px) {
   .links-column-wrapper {
     gap: 40px;

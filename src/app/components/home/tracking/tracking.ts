@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Fade } from '../../../directives/fade';
+import { Fade } from '../../../../directives/fade';
 
 export interface CardData {
   cardName: string
